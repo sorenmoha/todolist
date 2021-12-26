@@ -3,11 +3,11 @@
         <input
             type="text"
             name="inputTodo"
-            placeholder="Enter task"
+            placeholder="Enter Task"
             class="post-input"
             [(ngModel)]="inputTodo"
         />
-        <button class="post-submit" > Add task </button>
+        <button (click)="addTodo()" class="post-submit" > Add task </button>
     </form>
     
     <div *ngFor="let todo of todos; let i = index;" class="todo {{ (todo.completed ? 'done' : '')}}" >

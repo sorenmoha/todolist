@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { Todo } from 'src/app/models/Todo';
 
 @Component({
@@ -16,14 +17,6 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     this.todos = [
-      {
-        content: "First Task",
-        completed: false
-      },
-      {
-        content: "Second Task",
-        completed: false
-      }
       
     ]
   }
@@ -38,6 +31,15 @@ export class PostComponent implements OnInit {
 
   removeTodo (id: number) {
     this.todos = this.todos.filter((v, i) => i !== id); 
+  }
+
+  addTodo () {
+    this.todos.push({
+      content: this.inputTodo,
+      completed: false
+    }) 
+      
+    this.inputTodo = ""; 
   }
 
 }
