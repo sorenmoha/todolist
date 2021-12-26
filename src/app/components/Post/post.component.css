@@ -1,0 +1,85 @@
+.todo {
+	display: flex;
+	padding: 25px 20px;
+	background-color: #FFF;
+	border-bottom: 1px solid #DDD;
+}
+
+
+
+.todo:nth-child(even) {
+	background-color: rgb(232, 241, 255);
+}
+
+.todo:last-of-type {
+	border-bottom: 0;
+}
+
+.todo .id {
+	flex: 1 1 50px;
+}
+
+.todo .content {
+	flex: 1 1 100%;
+}
+
+.todo.done .content {
+	text-decoration: line-through;
+}
+
+.post-input {
+    margin-bottom:20px ;
+	display: block;
+	width: 100%;
+	padding: 10px 15px;
+	appearance: none;
+	border: none;
+	background-color: rgb(209, 226, 253);
+	margin-top: 15px;
+	font-size: 20px;
+	outline: none;
+}
+
+.post-submit {
+	display: block;
+	width: 100%;
+	max-width: 150px;
+	background-color: #ff5e8fde;
+	color: #FFF;
+	margin: 15px auto;
+
+	padding: 10px 15px;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.content {
+    font-family: arial;
+    font-size: 20px;
+}
+
+.id {
+    font-family: arial;
+    font-size: 20px;
+}
+
+
+button {
+    margin-right: 10px;
+    background-color: #77777771; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px; 
+    padding: 10px;
+    transition: box-shadow .25s;
+    
+}
+
+button:hover {
+    box-shadow: 2px 2px 16px 0 rgba(0, 0, 0, 0.322), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
